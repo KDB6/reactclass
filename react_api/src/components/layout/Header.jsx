@@ -12,7 +12,7 @@ const Header = () => {
             </ul>
         </div>
         <h1 className="header__center">
-            <Link to="/about">API SITE</Link>
+            <Link to="/main">API SITE</Link>
         </h1>
         <div className="header__right">
             <ul>
