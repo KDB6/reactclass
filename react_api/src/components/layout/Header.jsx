@@ -8,11 +8,12 @@ const Header = () => {
             <ul>
                 <li>
                     <Link to="/about">About</Link>
+                    <Link to="/reference">Reference</Link>
                 </li>
             </ul>
         </div>
         <h1 className="header__center">
-            <Link to="/main">API SITE</Link>
+            <Link to="/about">API SITE</Link>
         </h1>
         <div className="header__right">
             <ul>
