@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Main  from './components/pages/Main';
+import Main from './components/pages/Main';
 import Abuot from './components/pages/Abuot';
 import Reference from './components/pages/Reference';
 import Youtube from './components/pages/Youtube';

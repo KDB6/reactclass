@@ -1,21 +1,41 @@
 import React from 'react'
 
+const imageText = {
+    blind: "NEW ARRIVALS",
+    miniTitle: "NEW ARRIVALS",
+    title: "NEW ARRIVALS",
+    sub: "새로움의 시작",
+}
+
+const imageLink = [
+    {aLink: "/", desc: "All"},
+    {aLink: "/", desc: "Shirt"},
+    {aLink: "/", desc: "Knit"},
+    {aLink: "/", desc: "T-Shirt"},
+    {aLink: "/", desc: "Jacket"},
+    {aLink: "/", desc: "Pants"},
+]
+
+const ImageLinkCont = ({aLink, desc}) => {
+    <li><a href={`${aLink}`}>{desc}</a></li>
+}
+
 function Imgtext({attr}) {
   return (
     <section id="imgTextType" className={`imgText__wrap ${attr[0]} ${attr[1]} ${attr[2]}`}>
-        <h2 className="blind">NEW ARRIVALS</h2>
+        <h2 className="blind">{imageText.blind}</h2>
         <div className={`imgText__inner ${attr[3]}`}>
             <div className="imgText__txt">
-                <span>NEW ARRIVALS</span>
-                <h3>NEW ARRIVALS</h3>
-                <p>새로움의 시작</p>
+                <span>{imageText.miniTitle}</span>
+                <h3>{imageText.title}</h3>
+                <p>{imageText.sub}</p>
                 <ul>
-                    <li><a href="/">All</a></li>
-                    <li><a href="/">Shirt</a></li>
-                    <li><a href="/">Knit</a></li>
-                    <li><a href="/">T-Shirt</a></li>
-                    <li><a href="/">Jacket</a></li>
-                    <li><a href="/">Pants</a></li>
+                    { imageLink.map(info => (
+                        <ImageLinkCont 
+                            aLink = {info.aLink}
+                            desc = {info.desc}
+                        />
+                    ))}
                 </ul>
             </div>
             <div className="imgText__img img1">
