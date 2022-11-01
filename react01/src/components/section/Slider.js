@@ -5,6 +5,14 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+const sliderText = {
+  brand: "Brand",
+  title: "22AW Lookbook",
+  p: "포터리는 현대사회에 알맞는 유니폼을 제안하고자 합니다.",
+  btnMore: "Read more",
+  btnSite: "Site"
+}
+
 
 function Slider(props) {
     return (
@@ -20,51 +28,45 @@ function Slider(props) {
             modules={[Autoplay, Navigation, Pagination]} 
             className="mySwiper"
           >
-          <SwiperSlide>
+            <SwiperSlide>
             <div className="desc">
-                <span>Brand</span>
-                <h3>22AW Lookbook</h3>
+                <span>{sliderText.brand}</span>
+                <h3>{sliderText.title}</h3>
                 <p>
-                    포터리는 현대사회에 알맞는 유니폼을 제안하고자 합니다.
+                  {sliderText.p}
                 </p>
                 <div className="btn">
-                    <a href="/">Read more</a>
-                    <a href="/" className="black">Site</a>
+                    <a href="/">{sliderText.btnMore}</a>
+                    <a href="/" className="black">{sliderText.btnSite}</a>
                 </div>
             </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="desc">
-                  <span>Brand</span>
-                  <h3>22AW Lookbook</h3>
-                  <p>
-                      포터리는 현대사회에 알맞는 유니폼을 제안하고자 합니다.
-                  </p>
-                  <div className="btn">
-                      <a href="/">Read more</a>
-                      <a href="/" className="black">Site</a>
-                  </div>
-              </div>
+            <div className="desc">
+                <span>{sliderText.brand}</span>
+                <h3>{sliderText.title}</h3>
+                <p>
+                  {sliderText.p}
+                </p>
+                <div className="btn">
+                    <a href="/">{sliderText.btnMore}</a>
+                    <a href="/" className="black">{sliderText.btnSite}</a>
+                </div>
+            </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="desc">
-                  <span>Brand</span>
-                  <h3>22AW Lookbook</h3>
-                  <p>
-                      포터리는 현대사회에 알맞는 유니폼을 제안하고자 합니다.
-                  </p>
-                  <div className="btn">
-                      <a href="/">Read more</a>
-                      <a href="/" className="black">Site</a>
-                  </div>
-              </div>
+            <div className="desc">
+                <span>{sliderText.brand}</span>
+                <h3>{sliderText.title}</h3>
+                <p>
+                  {sliderText.p}
+                </p>
+                <div className="btn">
+                    <a href="/">{sliderText.btnMore}</a>
+                    <a href="/" className="black">{sliderText.btnSite}</a>
+                </div>
+            </div>
             </SwiperSlide>
-            <SwiperSlide>Slide 4</SwiperSlide>
-            <SwiperSlide>Slide 5</SwiperSlide>
-            <SwiperSlide>Slide 6</SwiperSlide>
-            <SwiperSlide>Slide 7</SwiperSlide>
-            <SwiperSlide>Slide 8</SwiperSlide>
-            <SwiperSlide>Slide 9</SwiperSlide>
           </Swiper>
         </div>
       </section>

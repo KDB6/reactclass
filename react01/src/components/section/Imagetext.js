@@ -17,7 +17,18 @@ const imageLink = [
 ]
 
 const ImageLinkCont = ({aLink, desc}) => {
-    <li><a href={`${aLink}`}>{desc}</a></li>
+    return <li><a href={`${aLink}`}>{desc}</a></li>
+}
+
+const imageTextText = [
+    {img: "imgText__img img1", desc: "NEW ARRIVALS"},
+    {img: "imgText__img img2", desc: "BEST"}
+]
+
+const ImageTextCont = ({img, desc}) => {
+    return <div className={`${img}`}>
+                <a href="/">{desc}</a>
+            </div>
 }
 
 function Imgtext({attr}) {
@@ -31,19 +42,19 @@ function Imgtext({attr}) {
                 <p>{imageText.sub}</p>
                 <ul>
                     { imageLink.map(info => (
-                        <ImageLinkCont 
+                        <ImageLinkCont
                             aLink = {info.aLink}
                             desc = {info.desc}
                         />
                     ))}
                 </ul>
             </div>
-            <div className="imgText__img img1">
-                <a href="/">NEW ARRIVALS</a>
-            </div>
-            <div className="imgText__img img2">
-                <a href="/" className="blue">BEST</a>
-            </div>
+            { imageTextText.map(info => (
+                <ImageTextCont 
+                    img = {info.img}
+                    desc = {info.desc}
+                />
+            ))}
         </div>
     </section>
   )
