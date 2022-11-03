@@ -15,7 +15,7 @@ const Reference = () => {
   const [references, setReference] = useState([]);
 
   useEffect(()=>{
-    fetch("https://webstoryboy.github.io/react2022/src/assets/json/refer.json")
+    fetch("https://raw.githubusercontent.com/KDB6/reactclass/main/react_api/package-lock.json")
     .then(response => response.json())
     .then(result => console.log(result.data.htmlRefer))   // 데이터 불러올 때 객체만이냐 배열이냐에 따라 다르다
     .then(result => setReference(result.data.htmlRefer))
