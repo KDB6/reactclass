@@ -4,131 +4,131 @@
         {
             "num": 1,
             "title": "accent-color",
-            "desc": "콘텐츠 아이템의 상하관계 정렬 상태를 설정",
-            "descBasic": "align-content : stretch",
+            "desc": "특정 요소에 색상을 지정할 때 사용됩니다.",
+            "descBasic": "accent-color : stretch",
             "descApple": "flexbox",
             "descVer": "CSS3",
-            "descStar": "★☆☆☆☆",
+            "descStar": "★★★☆☆",
             "definition": [
-                "href특성을 통해 다른 페이지나 같은페이지의 위치, 파일와 그 외 다른 URL로 연결하는 하이퍼 링크를 만든다.",
-                "파일와 그 외 다른 URL로 연결하는 하이퍼 링크를 만든다."
+                "특정 요소에 색상을 지정할 때 사용됩니다.",
+                "특정 요소에 색상을 지정할 때 사용됩니다."
             ]
         },
         {
             "num": 2,
-            "title": "accent-color",
-            "desc": "콘텐츠 아이템의 상하관계 정렬 상태를 설정",
+            "title": "align-content",
+            "desc": "콘텐츠 아이템의 상하관계 정렬 상태를 설정합니다.",
             "descBasic": "align-content : stretch",
             "descApple": "flexbox",
             "descVer": "CSS3",
-            "descStar": "★☆☆☆☆",
+            "descStar": "★★★☆☆",
             "definition": [
-                "콘텐츠 아이템의 상하관계 정렬 상태를 설정",
-                "콘텐츠 아이템의 상하관계 정렬 상태를 설정합니다........"
+                "콘텐츠 아이템의 상하관계 정렬 상태를 설정합니다.",
+                "콘텐츠 아이템의 상하관계 정렬 상태를 설정합니다."
             ]
         },
         {
             "num": 3,
             "title": "align-items",
-            "desc": "콘텐츠 아이템의 상하관계 정렬 상태를 설정",
-            "descBasic": "align-content : stretch",
+            "desc": "콘텐츠 아이템의 내부 상하관계 정렬 상태를 설정합니다.",
+            "descBasic": "align-items : stretch",
             "descApple": "flexbox",
             "descVer": "CSS3",
-            "descStar": "★☆☆☆☆",
+            "descStar": "★★★☆☆",
             "definition": [
                 "콘텐츠 아이템의 내부 상하관계 정렬 상태를 설정합니다.",
-                "콘텐츠 아이템의 내부 상하관계"
+                "콘텐츠 아이템의 내부 상하관계 정렬 상태를 설정합니다."
             ]
         },
         {
             "num": 4,
             "title": "align-self",
             "desc": "콘텐츠 아이템의 상하관계 정렬 상태를 설정",
-            "descBasic": "align-content : stretch",
+            "descBasic": "align-self : stretch",
             "descApple": "flexbox",
             "descVer": "CSS3",
-            "descStar": "★☆☆☆☆",
+            "descStar": "★★★☆☆",
             "definition": [
                 "개별적인 콘텐츠 아이템의 정렬 상태를 설정합니다.",
-                "콘텐츠 아이템의 상하관계 정렬 상태를 설정합니다........"
+                "개별적인 콘텐츠 아이템의 정렬 상태를 설정합니다."
             ]
         },
         {
             "num": 5,
             "title": "all",
             "desc": "요소의 속성을 초기화 또는 상속을 설정합니다.",
-            "descBasic": "align-content : stretch",
+            "descBasic": "all : stretch",
             "descApple": "flexbox",
             "descVer": "CSS3",
-            "descStar": "★☆☆☆☆",
+            "descStar": "★★★☆☆",
             "definition": [
-                "콘텐츠 아이템의 상하관계 정렬 상태를 설정",
-                "콘텐츠 아이템의 상하관계 정렬 상태를 설정합니다........"
+                "요소의 속성을 초기화 또는 상속을 설정합니다.",
+                "요소의 속성을 초기화 또는 상속을 설정합니다."
             ]
         },
         {
             "num": 6,
             "title": "animation",
             "desc": "요소의 속성을 초기화 또는 상속을 설정합니다.",
-            "descBasic": "align-content : stretch",
+            "descBasic": "animation : stretch",
             "descApple": "flexbox",
             "descVer": "CSS3",
-            "descStar": "★☆☆☆☆",
+            "descStar": "★★★☆☆",
             "definition": [
-                "콘텐츠 아이템의 상하관계 정렬 상태를 설정",
-                "콘텐츠 아이템의 상하관계 정렬 상태를 설정합니다........"
+                "요소의 속성을 초기화 또는 상속을 설정합니다.",
+                "요소의 속성을 초기화 또는 상속을 설정합니다."
             ]
         },
         {
             "num": 7,
             "title": "animation-delay",
             "desc": "애니메이션 지연 시간을 설정합니다.",
-            "descBasic": "align-content : stretch",
+            "descBasic": "animation-delay : stretch",
             "descApple": "flexbox",
             "descVer": "CSS3",
-            "descStar": "★☆☆☆☆",
+            "descStar": "★★★☆☆",
             "definition": [
-                "콘텐츠 아이템의 상하관계 정렬 상태를 설정",
-                "콘텐츠 아이템의 상하관계 정렬 상태를 설정합니다........"
+                "애니메이션 지연 시간을 설정합니다.",
+                "애니메이션 지연 시간을 설정합니다."
             ]
         },
         {
             "num": 8,
             "title": "animation-direction",
             "desc": "애니메이션 움직임 방향을 설정합니다.",
-            "descBasic": "align-content : stretch",
+            "descBasic": "animation-direction : stretch",
             "descApple": "flexbox",
             "descVer": "CSS3",
-            "descStar": "★☆☆☆☆",
+            "descStar": "★★★☆☆",
             "definition": [
-                "콘텐츠 아이템의 상하관계 정렬 상태를 설정",
-                "콘텐츠 아이템의 상하관계 정렬 상태를 설정합니다........"
+                "애니메이션 움직임 방향을 설정합니다.",
+                "애니메이션 움직임 방향을 설정합니다."
             ]
         },
         {
             "num": 9,
             "title": "animation-duration",
             "desc": "애니메이션 움직임 시간을 설정합니다.",
-            "descBasic": "align-content : stretch",
+            "descBasic": "animation-duration : stretch",
             "descApple": "flexbox",
             "descVer": "CSS3",
-            "descStar": "★☆☆☆☆",
+            "descStar": "★☆★★★☆☆☆☆☆",
             "definition": [
-                "콘텐츠 아이템의 상하관계 정렬 상태를 설정",
-                "콘텐츠 아이템의 상하관계 정렬 상태를 설정합니다........"
+                "애니메이션 움직임 시간을 설정합니다.",
+                "애니메이션 움직임 시간을 설정합니다."
             ]
         },
         {
             "num": 10,
             "title": "animation-fill-mode",
             "desc": "애니메이션이 끝난 후의 상태를 설정합니다.",
-            "descBasic": "align-content : stretch",
+            "descBasic": "animation-fill-mode : stretch",
             "descApple": "flexbox",
             "descVer": "CSS3",
-            "descStar": "★☆☆☆☆",
+            "descStar": "★★★☆☆",
             "definition": [
                 "애니메이션이 끝난 후의 상태를 설정합니다.",
-                "콘텐츠 아이템의 상하관계 정렬 상태를 설정합니다........"
+                "애니메이션이 끝난 후의 상태를 설정합니다."
             ]
         }
     ]

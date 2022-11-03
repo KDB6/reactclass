@@ -1,29 +1,35 @@
 import React from 'react'
 
-const ReferText = ({num, name, desc, star}) => {
+const ReferText = ({id, title, desc, desc2}) => {
     return (
         <li>
             <a href="/">
-                <span className="num">{num}</span>
-                <span className="name">{name}</span>
+                <span className="num">{id}</span>
+                <span className="name">{title}</span>
                 <span className="desc">
                     {desc}
                 </span>
-                <span className="star">{star}</span>
+                <span className="star">{desc2}</span>
             </a>
         </li>
     )
 }
 
-const ReferCont = ({prop}) => {
+const ReferCont = ({references}) => {
   return (
     <section className='cont__refer'>
         <div className="container">
             <div className="refer__inner">
                 <h2>CSS</h2>
                 <ul className='refer__list'>
-                  {prop.map((info, idx) => (
-                    <ReferText key={idx} info={info} />
+                  {references.map((refer, idx) => (
+                    <ReferText 
+                        key={idx}
+                        id={refer.id}
+                        title={refer.title}
+                        desc={refer.desc}
+                        descStar={refer.desc2}
+                    />
                   ))}
                 </ul>
             </div>
