@@ -4,19 +4,30 @@ import Header from "../layout/Header";
 import Footer from "../layout/Footer";
 import Contents from "../layout/Contents";
 import Title from "../layout/Title";
-import AboutCont from "../include/AboutCont";
+import MovieSearch from "../include/MovieSearch";
 import MovieCont from "../include/MovieCont";
+import MovieList from "../include/MovieList";
 import Contact from "../layout/Contact";
 
 const Movie = () => {
   const [movies, setMovies] = useState([]);
 
+  const search = (query) => {
+    fetch(
+      "https://api.themoviedb.org/3/search/movie?api_key=540588f0940b5e6bdcf873b4608b86f0&query=&page=1"
+    )
+      .then((response) => response.json())
+      .then((result) => setMovies(result.results))
+      .catch((error) => console.log(error));
+  };
+
   useEffect(()=>{
-    fetch('https://api.themoviedb.org/3/search/movie?api_key=bac86c38508d81c3aa391db7e3be94b1&page=1&query=no')
-    .then(result => console.log(movies))
-    .then(response => response.json())
-    .then(result => setMovies(result))
-    .catch(error => console.log('error', error));
+    fetch(
+      "https://api.themoviedb.org/3/search/movie?api_key=540588f0940b5e6bdcf873b4608b86f0&query=horror&page=1"
+    )
+      .then((response) => response.json())
+      .then((result) => setMovies(result.results))
+      .catch((error) => console.log(error));
   },[])
 
   return (
@@ -24,7 +35,8 @@ const Movie = () => {
         <Header />
         <Contents>
           <Title title={["Movie", "referene API"]} />
-          <AboutCont/>
+          <MovieSearch onSearch={search} />
+          <MovieList />
           <MovieCont movies={movies}/>
           <Contact />
         </Contents>
@@ -34,3 +46,35 @@ const Movie = () => {
 }
 
 export default Movie
+
+// import React from "react";
+// import { useState, useEffect } from "react";
+// import Header from "../layout/Header";
+// import Contents from "../layout/Contents";
+// import Footer from "../layout/Footer";
+// import Title from "../layout/Title";
+// import MovieCont from "../include/MovieCont";
+// import Contact from "../layout/Contact";
+// const Movie = () => {
+//   const [movies, setMovies] = useState([]);
+//   useEffect(() => {
+//     fetch(
+//       "https://api.themoviedb.org/3/search/movie?api_key=540588f0940b5e6bdcf873b4608b86f0&query=horror&page=1"
+//     )
+//       .then((response) => response.json())
+//       .then((result) => setMovies(result.results))
+//       .catch((error) => console.log(error));
+//   }, []);
+//   return (
+//     <>
+//       <Header />
+//       <Contents>
+//         <Title title={["movie", "reference api"]} />
+//         <MovieCont movies={movies} />
+//         <Contact />
+//       </Contents>
+//       <Footer />
+//     </>
+//   );
+// };
+// export default Movie;
