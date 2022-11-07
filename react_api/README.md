@@ -21,4 +21,4 @@ npm install axios
 npm install gsap
 
 ## reference json   
-https://github.com/KDB6/reactclass/blob/main/react_api/src/utils/reference.json
+https://raw.githubusercontent.com/KDB6/reactclass/main/react_api/src/utils/reference.json
