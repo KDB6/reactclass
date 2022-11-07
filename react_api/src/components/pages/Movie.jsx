@@ -14,7 +14,7 @@ const Movie = () => {
 
   const search = (query) => {
     fetch(
-      "https://api.themoviedb.org/3/search/movie?api_key=540588f0940b5e6bdcf873b4608b86f0&query=&page=1"
+      `https://api.themoviedb.org/3/search/movie?api_key=540588f0940b5e6bdcf873b4608b86f0&${query}=horror=&page=1`
     )
       .then((response) => response.json())
       .then((result) => setMovies(result.results))
@@ -35,8 +35,8 @@ const Movie = () => {
         <Header />
         <Contents>
           <Title title={["Movie", "referene API"]} />
-          <MovieSearch onSearch={search} />
           <MovieList />
+          <MovieSearch onSearch={search} />
           <MovieCont movies={movies}/>
           <Contact />
         </Contents>

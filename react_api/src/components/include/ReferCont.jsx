@@ -6,9 +6,7 @@ const ReferText = ({num, title, desc, descStar}) => {
             <a href="/">
                 <span className="num">{num}</span>
                 <span className="name">{title}</span>
-                <span className="desc">
-                    {desc}
-                </span>
+                <span className="desc">{desc}</span>
                 <span className="star">{descStar}</span>
             </a>
         </li>
