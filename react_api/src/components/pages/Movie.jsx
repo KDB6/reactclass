@@ -14,12 +14,20 @@ const Movie = () => {
 
   const search = (query) => {
     fetch(
-      `https://api.themoviedb.org/3/search/movie?api_key=540588f0940b5e6bdcf873b4608b86f0&query=${query}&page=1`
+      `https://api.themoviedb.org/3/search/movie?api_key=540588f0940b5e6bdcf873b4608b86f0&query=${query}`
     )
       .then((response) => response.json())
       .then((result) => setMovies(result.results))
       .catch((error) => console.log(error));
   };
+
+  useEffect(() => {
+    fetch(`https://api.themoviedb.org/3/movie/popular?api_key=540588f0940b5e6bdcf873b4608b86f0&language=ko-KOR&page=1&region=`)
+        .then((response) => response.json())
+        .then((result) => setpopular(result.results))
+        // .then((result) => console.log(result.results))
+        .catch((error) => console.log(error));
+  }, []);
 
   useEffect(()=>{
     fetch(
