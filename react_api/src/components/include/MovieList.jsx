@@ -1,86 +1,81 @@
-// import React, { Component } from "react";
+import React, { Component } from "react";
 
-// const key = "https://api.themoviedb.org/3/search/movie?api_key=540588f0940b5e6bdcf873b4608b86f0&query=horror&page=1";
+const key = "https://api.themoviedb.org/3/search/movie?api_key=540588f0940b5e6bdcf873b4608b86f0&query=horror&page=1";
  
-// const getDate = new Date();
-// const yDate = getDate.getTime(1 * 24 * 60 * 60 * 1000);
-// getDate.setTime(yDate);
-// var yYear = getDate.getFullYear();
-// var yMonth = getDate.getMonth() + 1;
-// var yDay = getDate.getDate() - 1;
-
-// <div className='movie__list container'>
-//   <h2>Best</h2>
-//   <p>영화 인기순위</p>
-// </div>
+const getDate = new Date();
+const yDate = getDate.getTime(1 * 24 * 60 * 60 * 1000);
+getDate.setTime(yDate);
+var yYear = getDate.getFullYear();
+var yMonth = getDate.getMonth() + 1;
+var yDay = getDate.getDate() - 1;
  
-// if (yMonth < 10) {
-//   yMonth = "0" + yMonth;
-// }
-// if (yDay < 10) {
-//   yDay = "0" + yDay;
-// }
-// const resultDate = yYear + "-" + yMonth + "-" + yDay;
- 
-// const res = resultDate.slice(0, 10).replace(/-/g, "");
- 
-// class MovieList extends Component {
-//   state = {};
- 
-//   componentDidMount() {
-//     this._getMovies();
-//   }
- 
-//   _renderMovies = () => {
-//     const movies = this.state.movies.map((dailyBoxOfficeList, index) => {
-//       return (
-//         <MovieList 
-//           rank={dailyBoxOfficeList.rank}
-//           movieNm={dailyBoxOfficeList.movieNm}
-//           key={index}
-//         />
-//       );
-//     });
-//     return movies;
-//   };
- 
-//   _getMovies = async () => {
-//     const movies = await this._callApi();
-//     this.setState({
-//       movies
-//     });
-//   };
- 
-//   _callApi = () => {
-//     return fetch(
-//       `https://api.themoviedb.org/3/search/movie?api_key=${key}&query=${res}horror&page=1`
-//     )
-//       .then(a => a.json())
-//       .then(json => json.boxOfficeResult.dailyBoxOfficeList)
-//       .catch(err => console.log(err));
-//   };
- 
-//   render() {
-//     const { movies } = this.state;
-//     return (
-//       <div className={movies ? "App" : "App-loading"}>
-//         {movies ? this._renderMovies() : "로딩중 ..."}
-//       </div>
-//     );
-//   }
-// }
- 
-// export default MovieList;
-
-import React from 'react'
-
-const movieList = () => {
-  return (
-    <div className='movie__list container'>
-      <h2>dsads</h2>
-      <p>sdadasdsa</p>
-    </div>
-  )
+if (yMonth < 10) {
+  yMonth = "0" + yMonth;
 }
+if (yDay < 10) {
+  yDay = "0" + yDay;
+}
+const resultDate = yYear + "-" + yMonth + "-" + yDay;
+ 
+const res = resultDate.slice(0, 10).replace(/-/g, "");
+ 
+class MovieList extends Component {
+  state = {};
+ 
+  componentDidMount() {
+    this._getMovies();
+  }
+ 
+  _renderMovies = () => {
+    const movies = this.state.movies.map((dailyBoxOfficeList, index) => {
+      return (
+        <MovieList 
+          rank={dailyBoxOfficeList.rank}
+          movieNm={dailyBoxOfficeList.movieNm}
+          key={index}
+        />
+      );
+    });
+    return movies;
+  };
+ 
+  _getMovies = async () => {
+    const movies = await this._callApi();
+    this.setState({
+      movies
+    });
+  };
+ 
+  _callApi = () => {
+    return fetch(
+      `https://api.themoviedb.org/3/search/movie?api_key=${key}&query=${res}horror&page=1`
+    )
+      .then(a => a.json())
+      .then(json => json.boxOfficeResult.dailyBoxOfficeList)
+      .catch(err => console.log(err));
+  };
+ 
+  render() {
+    const { movies } = this.state;
+    return (
+      <div className={movies ? "App" : "App-loading"}>
+        {movies ? this._renderMovies() : "로딩중 ..."}
+      </div>
+    );
+  }
+}
+ 
+export default MovieList;
 
-export default movieList
+// import React from 'react'
+
+// const movieList = () => {
+//   return (
+//     <div className='movie__list container'>
+//       <h2>dsads</h2>
+//       <p>sdadasdsa</p>
+//     </div>
+//   )
+// }
+
+// export default movieList
