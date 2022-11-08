@@ -24,7 +24,7 @@ const Movie = () => {
   useEffect(() => {
     fetch(`https://api.themoviedb.org/3/movie/popular?api_key=540588f0940b5e6bdcf873b4608b86f0&language=ko-KOR&page=1&region=`)
         .then((response) => response.json())
-        .then((result) => setpopular(result.results))
+        .then((result) => MovieList(result.results))
         // .then((result) => console.log(result.results))
         .catch((error) => console.log(error));
   }, []);

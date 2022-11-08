@@ -20,5 +20,18 @@ npm install axios
 
 npm install gsap
 
-## reference json   
+## reference json
+
 https://raw.githubusercontent.com/KDB6/reactclass/main/react_api/src/utils/reference.json
+
+## 리액트 사이트1 -> 1. 퍼블리싱 -> 2. 데이터
+
+## 뷰 사이트1 -> 1. 퍼블리싱
+
+## 리액트 사이트2 -> 1. 퍼블리싱
+
+## 뷰 사이트2 -> 1. 퍼블리싱
+
+## 리액트 API 사이트1 -> 로우터 -> API 불러오기 -> TOP10 (이미지 슬라이드)
+
+## 뷰 API 사이트1 -> 로우터
